@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AC395EDA-1534-4FA9-BE40-9151DE229C28"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BEF92CFF-DF46-48B1-9786-5C663326D848"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "combinationSum/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "combinationSum(_:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BEF92CFF-DF46-48B1-9786-5C663326D848 - 5cd38499b0896b36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "combinationSum.Solution.combinationSum(Swift.Array&lt;Swift.Int&gt;, Swift.Int) -&gt; Swift.Array&lt;Swift.Array&lt;Swift.Int&gt;&gt;"
+                  moduleName = "combinationSum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/niil/workspace/leetcode/combinationSum/combinationSum/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "427">
+               </Location>
+               <Location
+                  uuid = "BEF92CFF-DF46-48B1-9786-5C663326D848 - 87e3da9b804efa77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Int) -&gt; Swift.Array&lt;Swift.Array&lt;Swift.Int&gt;&gt; in combinationSum.Solution.combinationSum(Swift.Array&lt;Swift.Int&gt;, Swift.Int) -&gt; Swift.Array&lt;Swift.Array&lt;Swift.Int&gt;&gt;"
+                  moduleName = "combinationSum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/niil/workspace/leetcode/combinationSum/combinationSum/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "46">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
