@@ -1,7 +1,7 @@
 from typing import List
 
 def flat_map(f, iterable):
-    return [subX for x in iterable for subX in f(x)]
+    return [y for x in iterable for y in f(x)]
 
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:

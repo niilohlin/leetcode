@@ -28,7 +28,6 @@ def rpn_stack(stack: List[Union[str, int]]) -> List[Union[str, int]]:
     Turn lexed stack into rpn, e.g
     [2, '-', 11, '+', 2] -> [2, 11, '-' 2, '+']
     """
-    old_stack = stack
     stack = list(reversed(stack))
     operator_stack = []
     result_stack = ['(']
@@ -103,6 +102,9 @@ text = "1+7-7+3+3+6-3+1-8-2-6-1+8-0+0-2+0+10-6-9-9+0+6+4+2+7+1-4-6-6-0+6+3-7+0-4
 if __name__ == "__main__":
     s = Solution()
     # print(s.calculate("-2"))
+    import time
+    c = time.time()
     print(s.calculate(text))
+    print(f"time {time.time() - c}")
 
 
