@@ -67,28 +67,33 @@ def rpn_stack(stack: List[Union[str, int]]) -> List[Union[str, int]]:
     result_stack = list(filter(lambda o: o != '(', result_stack))
     return result_stack
 
-def eval_stack(stack: List[Union[str, int]]) -> int:
+def eval_stack(tokens: List[Union[str, int]]) -> int:
     """
     evaluates an rpn stack
     [2, 11, '-' 2, '+'] -> -11
     """
-    i = 0
-    while i < len(stack):
-        if stack[i] == '+':
-            stack = stack[:i - 2] + [stack[i - 2] + stack[i - 1]] + stack[i + 1:]
-            i -= 1
-        elif stack[i] == '-':
-            stack = stack[:i - 2] + [stack[i - 2] - stack[i - 1]] + stack[i + 1:]
-            i -= 1
-        elif stack[i] == 'n':
-            stack[i - 1] *= -1
-            stack = stack[:i] + stack[i + 1:]
-            i -= 1
+
+    stack = []
+    op_map = {
+        "+": lambda x, y: x + y,
+        "-": lambda x, y: x - y,
+        "n": lambda x: -x
+    }
+    tokens.reverse()
+    while tokens:
+        current = tokens.pop()
+        operator = op_map.get(current)
+        if operator:
+            lhs = stack.pop()
+            if current == 'n':
+                stack.append(operator(lhs))
+            else:
+                rhs = stack.pop()
+                stack.append(operator(rhs, lhs))
         else:
-            i += 1
+            stack.append(current)
 
     return stack[0]
-
 
 class Solution:
     def calculate(self, s: str) -> int:

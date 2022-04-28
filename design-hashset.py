@@ -32,4 +32,3 @@ class MyHashSet:
 if __name__ == "__main__":
     s = MyHashSet()
 
-    for
